@@ -15,3 +15,11 @@ export async function cardAlreadyInUse(cardId:Number){
         throw new Error("Card is already in use")
     }
 }
+
+export async function invalidCheck(cardId:Number){
+    const response = await connectionDB.query('SELECT * FROM checks WHERE "card-id"=$1',[cardId])
+
+    if(response.rowCount === 0){
+        throw new Error("invalid Card number")
+    }
+}
