@@ -18,3 +18,7 @@ WHERE "card-id"=$1`, [cardId])
 
     return response.rows
 }
+
+export async function deleteCheckByCardId(cardId:Number){
+	await connectionDB.query('DELETE FROM checks WHERE "card-id"=$1',[cardId])
+}
