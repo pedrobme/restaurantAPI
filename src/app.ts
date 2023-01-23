@@ -5,10 +5,11 @@ import { customersRouter } from "./routers/customer.router.js";
 import { cardsRouter } from "./routers/card.router.js";
 import { checksRouter } from "./routers/check.router.js";
 import { ordersRouter } from "./routers/order.router.js";
+import { productsRouter } from "./routers/product.router.js";
 dotenv.config();
 
 const server = express();
-server.use(cors()).use(express.json()).use("/customers", customersRouter).use("/cards",cardsRouter).use("/checks", checksRouter).use("/orders", ordersRouter);
+server.use(cors()).use(express.json()).use("/customers", customersRouter).use("/cards",cardsRouter).use("/checks", checksRouter).use("/orders", ordersRouter).use("/products", productsRouter)
 
 const PORT = process.env.API_PORT || 5000;
 

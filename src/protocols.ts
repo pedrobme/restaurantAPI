@@ -17,7 +17,12 @@ export type check = {
 }
 
 export type order = {
-    "check-id":Number,
+    "card-id":Number,
     "product-id": Number,
     amount: Number
+}
+
+export type product = {
+    name:Text,
+    price:Number
 }
