@@ -41,7 +41,7 @@ This project simulate one restaurant API, that each customer has to enroll his i
     
 ### (GET "/balance/:cardid")
   Receive cardId by req.params, response will be on that format:
-    {balance: <Number>}
+    {balance: "<Number>"}
     
 ### (DELETE "/balance/:cardid")
   Receive cardId by req.params, check will be deleted and orders reseted.
