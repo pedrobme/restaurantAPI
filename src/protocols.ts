@@ -4,3 +4,14 @@ export type customer = {
     email:string,
     createdAt:Date
 }
+
+export type card = {
+    inUse:boolean
+}
+
+export type check = {
+    createdAt:Date,
+    finishedAt:Date,
+    "card-id":number,
+    "customer-id": number
+}
