@@ -48,3 +48,19 @@ This project simulate one restaurant API, that each customer has to enroll his i
     
 ### (DELETE "/balance/:cardid")
   Receive cardId by req.params, check will be deleted and orders reseted.
+  
+## (Route "/products")
+### (POST "/create")
+  Receive object by req.body with that object Joi validation:
+  
+     {
+        name: Joi.string().required(),
+        price: Joi.number().required()
+    }
+    
+### (PATCH "/uptate/:id")
+  Receive product ID by req.params and an object with that object Joi validation:
+  
+    {
+        price: Joi.number().required()
+    }
