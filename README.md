@@ -60,6 +60,7 @@ This project simulate one restaurant API, that each customer has to enroll his i
     
 ### (PATCH "/uptate/:id")
   Receive product ID by req.params and an object with that object Joi validation:
+  
     {
         price: Joi.number().required()
     }
