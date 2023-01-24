@@ -28,7 +28,7 @@ This project simulates a restaurant API, that each customer has to make an enrol
         amount: Joi.number().required()
     }
     
-## (Route "checks")
+## (Route "/checks")
 ### (POST "/create")
   Receive object by req.body with that object Joi validation:
   
@@ -46,7 +46,7 @@ This project simulates a restaurant API, that each customer has to make an enrol
         balance: <Numeric>
     }
     
-### (DELETE "/balance/:cardid")
+### (DELETE "/finish/:cardid")
   Receive cardId by req.params, check will be deleted and orders reseted.
   
 ## (Route "/products")
