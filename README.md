@@ -1,6 +1,6 @@
 # restaurantAPI
 
-This project simulate one restaurant API, that each customer has to enroll his information on database and gets an personal check, that can be tracked by an physic card, by his id. Each card must have only one owner and each customer must own only one card. Once a customer has his card, he can purchase products, informing his card ID and the product ID(operator may get product ID by integrated system). The customer may get his check balance anytime he wants, and when finished a check all orders must be reseted for the next customer using that card.
+This project simulates a restaurant API, that each customer has to make an enrollment and gets a personal card ID that will register his actions. The card can be a magnetic or QR code card, a magnetic bracelet for parties, e.g., and it is vinculated to an unic card ID. Each card ID must have only one owner and each customer must own only one card ID. Once a customer have an enrollment and a vinculated card ID to him, he can purchase products providing his card ID and the product ID(that is provided by the integrated system) he wants to have. The customer may know his bill balance anytime he wants, and when finished a bill all orders must be reseted for the next customer using that card ID.
 
 # Routes
 ## (Route "/customers")
